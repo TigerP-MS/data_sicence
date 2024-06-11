@@ -1,89 +1,99 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>채팅</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: Arial, sans-serif; }
-        .chat-container { width: 90%; max-width: 800px; margin: 0 auto; }
-        .messages { border: 1px solid #ccc; padding: 10px; height: 500px; overflow-y: scroll; }
-        .message { margin: 10px 0; white-space: pre-line; }
-        .user { text-align: right; }
-        .server { text-align: left; }
-        .input-container { display: flex; margin-top: 10px; }
-        .input-container input { flex: 1; padding: 10px; }
-        .input-container button { padding: 10px; }
+        .message {
+            white-space: pre-line;
+        }
+        .chat-container {
+            height: calc(100vh - 150px); /* 헤더 및 여백을 고려한 높이 조절 */
+        }
+        .messages {
+            height: calc(100% - 50px); /* 입력창 영역을 제외한 높이 */
+        }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>
-    <div class="chat-container">
-        <div class="messages" id="messages"></div>
-        <div class="input-container">
-            <input type="text" id="messageInput" placeholder="메시지를 입력하세요">
-            <button onclick="sendMessage()">전송</button>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="w-full max-w-3xl p-4 bg-white shadow-md rounded-lg">
+        <h1 class="text-2xl font-bold text-center mb-4">Personal Healthcare Service</h1>
+        <div class="chat-container">
+            <div id="messages" class="messages border border-gray-300 p-4 overflow-y-scroll bg-gray-50 rounded-lg"></div>
+            <div class="input-container flex mt-4">
+                <input type="text" id="messageInput" placeholder="증상을 입력하세요" class="flex-grow p-2 border border-gray-300 rounded-l-md" disabled>
+                <button id="sendButton" onclick="sendMessage()" class="bg-blue-500 text-white p-2 rounded-r-md" disabled>전송</button>
+            </div>
         </div>
     </div>
 
     <script>
+        $(document).ready(function () {
+            addMessage("학습중...", 'server');
+
+            $('#messageInput').prop('disabled', true);
+            $('#sendButton').prop('disabled', true);
+
+            $.ajax({
+                url: '/chat/model_fit/',
+                type: 'get',
+                success: function (response) {
+                    console.log("Response from server:", response);
+                    if (response.status === 'Message received') {
+                        response.message.forEach(message => {
+                            console.log(message.text);
+                            addMessage(message.text, 'server');
+                        });
+                    }
+                    addMessage("학습완료\n증상을 입력하세요.", 'server');
+                    $('#messageInput').prop('disabled', false);
+                    $('#sendButton').prop('disabled', false);
+                }
+            });
+        });
+
         function sendMessage() {
-            const messageInput = document.getElementById('messageInput');
-            const userMessage = messageInput.value.trim();
-
-            if (userMessage !== '') {
-                fetch('/chat/add_to_chat/', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-CSRFToken': getCookie('csrftoken')
+            var input = $('#messageInput').val();
+            if (input.trim() !== '') {
+                addMessage(input, 'user');
+                $('#messageInput').val('');
+                $.ajax({
+                    url: '/chat/send_message/',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ 'message': input }),
+                    success: function (response) {
+                        console.log(`${response.status}, ${response.message}`);
+                        addMessage(response.message, 'server');
+                        if (response.status === 'Limit reached') {
+                            $('#messageInput').prop('disabled', true);
+                            $('#sendButton').prop('disabled', true);
+                        }
                     },
-                    body: JSON.stringify({ message: userMessage })
-                })
-                .then(response => response.json())
-                .then(data => {
-                    const messages = document.getElementById('messages');
-                    messages.innerHTML = '';
-                    data.messages.forEach(msg => {
-                        const messageElement = document.createElement('div');
-                        messageElement.className = 'message ' + msg.sender;
-                        messageElement.textContent = msg.sender === 'user' ? '유저: ' + msg.text : '서버: ' + msg.text;
-                        messages.appendChild(messageElement);
-                    });
-
-                    messages.scrollTop = messages.scrollHeight;
-
-                    // 입력 횟수가 10번이면 메시지 입력을 중단합니다.
-                    if (data.input_count >= 10) {
-                        const messageInputContainer = document.querySelector('.input-container');
-                        messageInputContainer.style.display = 'none';
+                    error: function () {
+                        console.log('Error sending message');
                     }
                 });
-
-                messageInput.value = '';
-                messageInput.focus();
             }
         }
 
-        function getCookie(name) {
-            let cookieValue = null;
-            if (document.cookie && document.cookie !== '') {
-                const cookies = document.cookie.split(';');
-                for (let i = 0; i < cookies.length; i++) {
-                    const cookie = cookies[i].trim();
-                    if (cookie.substring(0, name.length + 1) === (name + '=')) {
-                        cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
-                        break;
-                    }
-                }
-            }
-            return cookieValue;
+        function addMessage(message, sender) {
+            var classToAdd = sender === 'server' ? 'text-left text-gray-700' : 'text-right text-blue-700';
+            var messageElement = $('<div>').addClass('message my-2').addClass(classToAdd).text(message);
+            $('#messages').append(messageElement);
+            $('#messages').scrollTop($('#messages')[0].scrollHeight);
         }
 
-        document.getElementById('messageInput').addEventListener('keypress', function (e) {
-            if (e.key === 'Enter') {
-                sendMessage();
-            }
+        $(window).resize(function () {
+            $('.chat-container').css('height', `calc(100vh - 150px)`);
+            $('.messages').css('height', `calc(100% - 50px)`);
         });
     </script>
 </body>
+
 </html>

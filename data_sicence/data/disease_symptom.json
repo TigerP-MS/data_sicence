@@ -1,543 +1,632 @@
 [
 	{
-	  "id": 1,
-	  "eng_name": "Conjunctivitis due to allergy",
-	  "kor_name": "알레르기성 결막염",
-	  "desc": "알레르기 반응으로 인해 결막에 염증이 발생하는 상태입니다."
+	"id": 1,
+	"eng_name": "Conjunctivitis due to allergy",
+	"kor_name": "알레르기성 결막염",
+	"desc": "알레르기 반응으로 인해 결막에 염증이 발생하는 상태입니다.",
+	"img": "https://ssl.adam.com/graphics/images/en/1094.jpg"
 	},
 	{
-	  "id": 2,
-	  "eng_name": "Fibrocystic breast disease",
-	  "kor_name": "섬유낭성 유방 질환",
-	  "desc": "유방에 섬유질과 낭종이 형성되어 통증과 불편을 유발하는 상태입니다."
+	"id": 2,
+	"eng_name": "Fibrocystic breast disease",
+	"kor_name": "섬유낭성 유방 질환",
+	"desc": "유방에 섬유질과 낭종이 형성되어 통증과 불편을 유발하는 상태입니다.",
+	"img": "https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2023/02/28/16/28/fibrocystic-breast-6col-2116599-001.jpg"
 	},
 	{
-	  "id": 3,
-	  "eng_name": "Diabetic ketoacidosis",
-	  "kor_name": "당뇨병성 케토산증",
-	  "desc": "당뇨병 환자에서 혈당 조절이 제대로 되지 않아 케톤체가 혈액에 축적되어 발생하는 심각한 합병증입니다."
+	"id": 3,
+	"eng_name": "Diabetic ketoacidosis",
+	"kor_name": "당뇨병성 케토산증",
+	"desc": "당뇨병 환자에서 혈당 조절이 제대로 되지 않아 케톤체가 혈액에 축적되어 발생하는 심각한 합병증입니다.",
+	"img": "https://vidandiagnostics.com/wp-content/uploads/sites/6/2018/04/shutterstock_442344607.jpg"
 	},
 	{
-	  "id": 4,
-	  "eng_name": "Conductive hearing loss",
-	  "kor_name": "전도성 난청",
-	  "desc": "소리가 외이 또는 중이를 통해 내이로 전달되지 않아 발생하는 청력 손실입니다."
+	"id": 4,
+	"eng_name": "Conductive hearing loss",
+	"kor_name": "전도성 난청",
+	"desc": "소리가 외이 또는 중이를 통해 내이로 전달되지 않아 발생하는 청력 손실입니다.",
+	"img": "https://www.hearingchoices.com.au/wp-content/uploads/2017/03/conductive-hearing-loss.jpg"
 	},
 	{
-	  "id": 5,
-	  "eng_name": "Air embolism",
-	  "kor_name": "공기 색전증",
-	  "desc": "혈류에 공기가 들어가 혈관을 막아 발생하는 위험한 상태입니다."
+	"id": 5,
+	"eng_name": "Air embolism",
+	"kor_name": "공기 색전증",
+	"desc": "혈류에 공기가 들어가 혈관을 막아 발생하는 위험한 상태입니다.",
+	"img": "https://coreem.net/content/uploads/2016/09/Screen-Shot-2016-09-02-at-2.27.13-PM.png"
 	},
 	{
-	  "id": 6,
-	  "eng_name": "Endometriosis",
-	  "kor_name": "자궁내막증",
-	  "desc": "자궁내막 조직이 자궁 외부에 존재하여 통증과 불임을 초래하는 상태입니다."
+	"id": 6,
+	"eng_name": "Endometriosis",
+	"kor_name": "자궁내막증",
+	"desc": "자궁내막 조직이 자궁 외부에 존재하여 통증과 불임을 초래하는 상태입니다.",
+	"img": "https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/11/15/17/37/ds00289_-my00554_im00303_w7_endometriosisthu_jpg.jpg"
 	},
 	{
-	  "id": 7,
-	  "eng_name": "Amyloidosis",
-	  "kor_name": "아밀로이드증",
-	  "desc": "아밀로이드 단백질이 장기나 조직에 비정상적으로 축적되는 질환입니다."
+	"id": 7,
+	"eng_name": "Amyloidosis",
+	"kor_name": "아밀로이드증",
+	"desc": "아밀로이드 단백질이 장기나 조직에 비정상적으로 축적되는 질환입니다.",
+	"img": "https://my.clevelandclinic.org/-/scassets/images/org/health/articles/22598-cardiac-amyloidosis"
 	},
 	{
-	  "id": 8,
-	  "eng_name": "Graves disease",
-	  "kor_name": "그레이브스병",
-	  "desc": "갑상선이 과도하게 활성화되는 자가면역 질환입니다."
+	"id": 8,
+	"eng_name": "Graves disease",
+	"kor_name": "그레이브스병",
+	"desc": "갑상선이 과도하게 활성화되는 자가면역 질환입니다.",
+	"img": "https://medlineplus.gov/images/PX000164_PRESENTATION.jpeg"
 	},
 	{
-	  "id": 9,
-	  "eng_name": "Endometrial cancer",
-	  "kor_name": "자궁내막암",
-	  "desc": "자궁내막에서 발생하는 악성 종양입니다."
+	"id": 9,
+	"eng_name": "Endometrial cancer",
+	"kor_name": "자궁내막암",
+	"desc": "자궁내막에서 발생하는 악성 종양입니다.",
+	"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSheZJ7WUNNidAQd9fdIYTKE5gQJSxwN6v4w&s"
 	},
 	{
-	  "id": 10,
-	  "eng_name": "Carpal tunnel syndrome",
-	  "kor_name": "수근관 증후군",
-	  "desc": "손목의 정중신경이 압박되어 손과 손가락에 통증과 저림을 유발하는 상태입니다."
+	"id": 10,
+	"eng_name": "Carpal tunnel syndrome",
+	"kor_name": "수근관 증후군",
+	"desc": "손목의 정중신경이 압박되어 손과 손가락에 통증과 저림을 유발하는 상태입니다.",
+	"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS20svD1ATY_FZBeTKjMo62eveqaVWb7X0tWg&s"
 	},
 	{
-	  "id": 11,
-	  "eng_name": "Adjustment reaction",
-	  "kor_name": "적응 반응",
-	  "desc": "스트레스 요인에 대한 심리적 반응으로 일시적인 감정적 장애가 발생하는 상태입니다."
+	"id": 11,
+	"eng_name": "Adjustment reaction",
+	"kor_name": "적응 반응",
+	"desc": "스트레스 요인에 대한 심리적 반응으로 일시적인 감정적 장애가 발생하는 상태입니다.",
+	"img": "https://media.licdn.com/dms/image/D4D12AQGJCoDFCE1Nog/article-cover_image-shrink_720_1280/0/1683617450643?e=2147483647&v=beta&t=PEBxtooMw9Um8NK7CUOelSRpqlaoTWxqxDTbAaZZNmQ"
 	},
 	{
-	  "id": 12,
-	  "eng_name": "Actinic keratosis",
-	  "kor_name": "광선각화증",
-	  "desc": "자외선 노출로 인해 피부에 생기는 비정상적인 각질 변화입니다."
+	"id": 12,
+	"eng_name": "Actinic keratosis",
+	"kor_name": "광선각화증",
+	"desc": "자외선 노출로 인해 피부에 생기는 비정상적인 각질 변화입니다.",
+	"img": "https://irp-cdn.multiscreensite.com/f2fb22d0/dms3rep/multi/1507139.png"
 	},
 	{
-	  "id": 13,
-	  "eng_name": "Epididymitis",
-	  "kor_name": "부고환염",
-	  "desc": "부고환에 염증이 발생하여 통증과 부기를 유발하는 상태입니다."
+	"id": 13,
+	"eng_name": "Epididymitis",
+	"kor_name": "부고환염",
+	"desc": "부고환에 염증이 발생하여 통증과 부기를 유발하는 상태입니다.",
+	"img": "https://my.clevelandclinic.org/-/scassets/images/org/health/articles/17697-epididymitis"
 	},
 	{
-	  "id": 14,
-	  "eng_name": "Fluid overload",
-	  "kor_name": "체액 과다",
-	  "desc": "체내에 과도한 양의 체액이 축적되어 발생하는 상태입니다."
+	"id": 14,
+	"eng_name": "Fluid overload",
+	"kor_name": "체액 과다",
+	"desc": "체내에 과도한 양의 체액이 축적되어 발생하는 상태입니다.",
+	"img": "https://pbrainmd.wordpress.com/wp-content/uploads/2020/02/img_5020.jpg?w=911"
 	},
 	{
-	  "id": 15,
-	  "eng_name": "Dermatitis due to sun exposure",
-	  "kor_name": "태양 노출로 인한 피부염",
-	  "desc": "태양광에 노출되어 피부에 염증이 발생하는 상태입니다."
+	"id": 15,
+	"eng_name": "Dermatitis due to sun exposure",
+	"kor_name": "태양 노출로 인한 피부염",
+	"desc": "태양광에 노출되어 피부에 염증이 발생하는 상태입니다.",
+	"img": "https://www.drugwatch.com/wp-content/uploads/Sunlight-and-Skin.jpg"
 	},
 	{
-	  "id": 16,
-	  "eng_name": "Acariasis",
-	  "kor_name": "진드기증",
-	  "desc": "진드기 감염으로 인해 발생하는 질환입니다."
+	"id": 16,
+	"eng_name": "Acariasis",
+	"kor_name": "진드기증",
+	"desc": "진드기 감염으로 인해 발생하는 질환입니다.",
+	"img": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Ascaris_egg%2C_incubation_process.png/314px-Ascaris_egg%2C_incubation_process.png"
 	},
 	{
-	  "id": 17,
-	  "eng_name": "Chronic kidney disease",
-	  "kor_name": "만성 신장 질환",
-	  "desc": "신장 기능이 장기간에 걸쳐 점차적으로 저하되는 질환입니다."
+	"id": 17,
+	"eng_name": "Chronic kidney disease",
+	"kor_name": "만성 신장 질환",
+	"desc": "신장 기능이 장기간에 걸쳐 점차적으로 저하되는 질환입니다.",
+	"img": "https://image.slidesharecdn.com/ckd-200324122812/85/chronic-kidney-disease-ckd-4-320.jpg?cb=1665707714"
 	},
 	{
-	  "id": 18,
-	  "eng_name": "Erythema multiforme",
-	  "kor_name": "다형 홍반",
-	  "desc": "피부와 점막에 다형의 발진이 나타나는 급성 염증성 질환입니다."
+	"id": 18,
+	"eng_name": "Erythema multiforme",
+	"kor_name": "다형 홍반",
+	"desc": "피부와 점막에 다형의 발진이 나타나는 급성 염증성 질환입니다.",
+	"img": "https://www.osmosis.org/_next/image?url=https%3A%2F%2Fosmose-it.s3.amazonaws.com%2Fwlt_rdj0SMe0wTHW8XsdnVdMTjaQ585B%2F_.jpg&w=3840&q=75"
 	},
 	{
-	  "id": 19,
-	  "eng_name": "Female infertility of unknown cause",
-	  "kor_name": "원인 불명의 여성 불임",
-	  "desc": "명확한 원인이 밝혀지지 않은 여성의 불임 상태입니다."
+	"id": 19,
+	"eng_name": "Female infertility of unknown cause",
+	"kor_name": "원인 불명의 여성 불임",
+	"desc": "명확한 원인이 밝혀지지 않은 여성의 불임 상태입니다.",
+	"img": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41572-018-0058-8/MediaObjects/41572_2018_58_Fig1_HTML.png"
 	},
 	{
-	  "id": 20,
-	  "eng_name": "Fibromyalgia",
-	  "kor_name": "섬유근육통",
-	  "desc": "근육과 연조직에 광범위한 통증과 피로를 유발하는 만성 질환입니다."
+	"id": 20,
+	"eng_name": "Fibromyalgia",
+	"kor_name": "섬유근육통",
+	"desc": "근육과 연조직에 광범위한 통증과 피로를 유발하는 만성 질환입니다.",
+	"img": "https://i.ytimg.com/vi/3Y7Af633eXE/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAuJYCmgXUTXYn0TCzL04RVf86S4g"
 	},
 	{
-	  "id": 21,
-	  "eng_name": "Fracture of the pelvis",
-	  "kor_name": "골반 골절",
-	  "desc": "골반 뼈에 금이 가거나 부러지는 상태입니다."
+	"id": 21,
+	"eng_name": "Fracture of the pelvis",
+	"kor_name": "골반 골절",
+	"desc": "골반 뼈에 금이 가거나 부러지는 상태입니다.",
+	"img": "https://www.stepwards.com/wp-content/uploads/2018/02/Pelvic-Fractures-First-Aid.jpg"
 	},
 	{
-	  "id": 22,
-	  "eng_name": "Decubitus ulcer",
-	  "kor_name": "욕창",
-	  "desc": "오랜 시간 동안 압박으로 인해 피부와 하부 조직에 발생하는 궤양입니다."
+	"id": 22,
+	"eng_name": "Decubitus ulcer",
+	"kor_name": "욕창",
+	"desc": "오랜 시간 동안 압박으로 인해 피부와 하부 조직에 발생하는 궤양입니다.",
+	"img": "https://www.shutterstock.com/image-vector/medical-illustration-shows-progression-decubitus-600nw-2010684131.jpg"
 	},
 	{
-	  "id": 23,
-	  "eng_name": "Anxiety",
-	  "kor_name": "불안",
-	  "desc": "지속적이고 과도한 걱정과 두려움을 느끼는 상태입니다."
+	"id": 23,
+	"eng_name": "Anxiety",
+	"kor_name": "불안",
+	"desc": "지속적이고 과도한 걱정과 두려움을 느끼는 상태입니다.",
+	"img": "https://www.verywellhealth.com/thmb/aKTHSilK0E0blSgus3CuyBBtmbE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/anxiety-attack-5088600-Final-b3ff4ac50a6d4c13833a0097896c2d95.jpg"
 	},
 	{
-	  "id": 24,
-	  "eng_name": "Contact dermatitis",
-	  "kor_name": "접촉 피부염",
-	  "desc": "알레르기 또는 자극 물질과 접촉으로 인해 피부에 염증이 발생하는 상태입니다."
+	"id": 24,
+	"eng_name": "Contact dermatitis",
+	"kor_name": "접촉 피부염",
+	"desc": "알레르기 또는 자극 물질과 접촉으로 인해 피부에 염증이 발생하는 상태입니다.",
+	"img": "https://www.shutterstock.com/image-vector/dermatitis-atopic-eczema-closeup-crosssection-260nw-1502215163.jpg"
 	},
 	{
-	  "id": 25,
-	  "eng_name": "De Quervain disease",
-	  "kor_name": "드퀘르벵 병",
-	  "desc": "손목의 건초염으로 인해 엄지손가락 부근에 통증이 발생하는 상태입니다."
+	"id": 25,
+	"eng_name": "De Quervain disease",
+	"kor_name": "드퀘르벵 병",
+	"desc": "손목의 건초염으로 인해 엄지손가락 부근에 통증이 발생하는 상태입니다.",
+	"img": "https://cdn-assets-eu.frontify.com/s3/frontify-enterprise-files-eu/eyJvYXV0aCI6eyJjbGllbnRfaWQiOiJmcm9udGlmeS1leHBsb3JlciJ9LCJwYXRoIjoiaWhoLWhlYWx0aGNhcmUtYmVyaGFkXC9hY2NvdW50c1wvYzNcLzQwMDA2MjRcL3Byb2plY3RzXC8yMDlcL2Fzc2V0c1wvYTJcLzMzNjUyXC84MjYxZDY4OTg1NmU3YzkxMmM1NjgzNGEzY2UyNjAwNy0xNjQ2OTI0NDY0LmpwZyJ9:ihh-healthcare-berhad:_G3EhGHTGxjVRujICO4tqa8AFw6RGbJqxqlIRbxgSLI"
 	},
 	{
-	  "id": 26,
-	  "eng_name": "Chondromalacia of the patella",
-	  "kor_name": "슬개골 연골연화증",
-	  "desc": "슬개골의 연골이 부드러워지고 손상되는 상태입니다."
+	"id": 26,
+	"eng_name": "Chondromalacia of the patella",
+	"kor_name": "슬개골 연골연화증",
+	"desc": "슬개골의 연골이 부드러워지고 손상되는 상태입니다.",
+	"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRNSrx5hhWZzyon_oP-KTLN29tp15vq14TvRvuY9VxiSmvQ-YuUOer_cWmN8Swd3C8QYg&usqp=CAU"
 	},
 	{
 	  "id": 27,
 	  "eng_name": "Extrapyramidal effect of drugs",
 	  "kor_name": "약물의 추체외로 부작용",
-	  "desc": "약물 사용으로 인해 발생하는 추체외로 증상(운동 장애 등)입니다."
+	  "desc": "약물 사용으로 인해 발생하는 추체외로 증상(운동 장애 등)입니다.",
+	  "img": "https://dr282zn36sxxg.cloudfront.net/datastreams/f-d%3Afe58ad2adf8bebbdc8173022267e93cfb6a81fb3d3bb4cc6e7928f70%2BIMAGE_THUMB_POSTCARD_TINY%2BIMAGE_THUMB_POSTCARD_TINY.1"
 	},
 	{
 	  "id": 28,
 	  "eng_name": "Guillain Barre syndrome",
 	  "kor_name": "길랭-바레 증후군",
-	  "desc": "면역 체계가 신경을 공격해 근력 약화와 마비를 유발하는 급성 질환입니다."
+	  "desc": "면역 체계가 신경을 공격해 근력 약화와 마비를 유발하는 급성 질환입니다.",
+	  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSszjxUO8CSk8BBZrGOnSNTFH0a0juKHP2aSgRwQClhbg7yomw3UxTUhzG4sa62IKW-SpU&usqp=CAU"
 	},
 	{
 	  "id": 29,
 	  "eng_name": "Eating disorder",
 	  "kor_name": "섭식 장애",
-	  "desc": "음식 섭취에 관련된 비정상적인 행동과 심리적 문제를 포함한 상태입니다."
+	  "desc": "음식 섭취에 관련된 비정상적인 행동과 심리적 문제를 포함한 상태입니다.",
+	  "img": "https://www.mdpi.com/ijerph/ijerph-20-06325/article_deploy/html/images/ijerph-20-06325-g001.png"
 	},
 	{
 	  "id": 30,
 	  "eng_name": "Gonorrhea",
 	  "kor_name": "임질",
-	  "desc": "임균 감염에 의해 발생하는 성병입니다."
+	  "desc": "임균 감염에 의해 발생하는 성병입니다.",
+	  "img": "https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/11/15/17/42/r7_malereprothu_jpg.jpg"
 	},
 	{
 	  "id": 31,
 	  "eng_name": "Dyshidrosis",
 	  "kor_name": "한포진",
-	  "desc": "손발에 작은 물집이 생기고 가려움증을 동반하는 피부 질환입니다."
+	  "desc": "손발에 작은 물집이 생기고 가려움증을 동반하는 피부 질환입니다.",
+	  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj4TTr8bKwnqzT0hSnCSopg6K2OAbneHfRZ08ieCO3qYrzgrNQxpJiNhMzLwtFxCJ2_i0&usqp=CAU"
 	},
 	{
 	  "id": 32,
 	  "eng_name": "Diabetic peripheral neuropathy",
 	  "kor_name": "당뇨병성 말초신경병증",
-	  "desc": "당뇨병으로 인해 말초 신경이 손상되어 감각 이상과 통증이 발생하는 상태입니다."
+	  "desc": "당뇨병으로 인해 말초 신경이 손상되어 감각 이상과 통증이 발생하는 상태입니다.",
+	  "img": "https://www.medicaltutors.com/public/upload/article_images/xDiabetes_Mellitus_VIII__Diabetic_Neuropathy-20230621125025517542.jpg.pagespeed.ic.RRr9krxDF7.jpg"
 	},
 	{
 	  "id": 33,
 	  "eng_name": "Chronic back pain",
 	  "kor_name": "만성 요통",
-	  "desc": "장기간 지속되는 허리 통증입니다."
+	  "desc": "장기간 지속되는 허리 통증입니다.",
+	  "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqj_0OFHZ_KzONGqXCnroqj6U-H_Q2Xkb0rmuZ53S4MW_e4EoiksdgCenVgtnnKq22x9A&usqp=CAU"
 	},
 	{
 	  "id": 34,
 	  "eng_name": "Connective tissue disorder",
 	  "kor_name": "결합 조직 질환",
-	  "desc": "결합 조직에 영향을 미치는 다양한 질환을 포함하는 상태입니다."
+	  "desc": "결합 조직에 영향을 미치는 다양한 질환을 포함하는 상태입니다.",
+	  "img": "https://todaysmama.com/.image/t_share/MTU5OTA5MzE1MzIxNDcyMzc1/image-placeholder-title.jpg"
 	},
 	{
 	  "id": 35,
 	  "eng_name": "Fat embolism",
 	  "kor_name": "지방 색전증",
-	  "desc": "지방이 혈류로 들어가 혈관을 막아 발생하는 상태입니다."
+	  "desc": "지방이 혈류로 들어가 혈관을 막아 발생하는 상태입니다.",
+	  "img": "https://medicoapps.org/wp-content/uploads/2018/06/Fat-Embolism.png"
 	},
 	{
 	  "id": 36,
 	  "eng_name": "Degenerative disc disease",
 	  "kor_name": "퇴행성 디스크 질환",
-	  "desc": "척추 디스크가 퇴행하여 통증과 기능 장애를 유발하는 상태입니다."
+	  "desc": "척추 디스크가 퇴행하여 통증과 기능 장애를 유발하는 상태입니다.",
+	  "img": "https://d2jx2rerrg6sh3.cloudfront.net/image-handler/picture/2019/10/%40shutterstock_405564442.jpg"
 	},
 	{
 	  "id": 37,
 	  "eng_name": "Chickenpox",
 	  "kor_name": "수두",
-	  "desc": "바이러스에 감염되어 발진과 가려움증을 유발하는 질환입니다."
+	  "desc": "바이러스에 감염되어 발진과 가려움증을 유발하는 질환입니다.",
+	  "img": "https://www.medicoverhospitals.in/images/diseases/symptoms-of-chicken-pox.webp"
 	},
 	{
 	  "id": 38,
 	  "eng_name": "Acute kidney injury",
 	  "kor_name": "급성 신손상",
-	  "desc": "갑작스러운 신장 기능 저하로 인해 체내 노폐물이 제대로 배출되지 않는 상태입니다."
+	  "desc": "갑작스러운 신장 기능 저하로 인해 체내 노폐물이 제대로 배출되지 않는 상태입니다.",
+	  "img": "https://prdscholarrxcdn.blob.core.windows.net/dam/Image/185354.png"
 	},
 	{
 	  "id": 39,
 	  "eng_name": "Adhesive capsulitis of the shoulder",
 	  "kor_name": "어깨 유착성 관절낭염",
-	  "desc": "어깨 관절의 유착으로 인해 운동 범위가 제한되고 통증이 발생하는 상태입니다."
+	  "desc": "어깨 관절의 유착으로 인해 운동 범위가 제한되고 통증이 발생하는 상태입니다.",
+	  "img": "https://turkeyistanbulmedical.com/wp-content/uploads/2023/02/Frozen-Shoulder-Syndrome.jpg"
 	},
 	{
 	  "id": 40,
 	  "eng_name": "Drug reaction",
 	  "kor_name": "약물 반응",
-	  "desc": "약물에 의해 발생하는 다양한 부작용입니다."
+	  "desc": "약물에 의해 발생하는 다양한 부작용입니다.",
+	  "img": "https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41591-020-0756-0/MediaObjects/41591_2020_756_Fig1_HTML.png"
 	},
 	{
 	  "id": 41,
 	  "eng_name": "Gas gangrene",
 	  "kor_name": "가스 괴저",
-	  "desc": "혐기성 세균에 감염되어 조직이 괴사하는 상태입니다."
+	  "desc": "혐기성 세균에 감염되어 조직이 괴사하는 상태입니다.",
+	  "img": "hhttps://i.ytimg.com/vi/zDiEeDxvP7g/maxresdefault.jpg"
 	},
 	{
 	  "id": 42,
 	  "eng_name": "Alzheimer disease",
 	  "kor_name": "알츠하이머병",
-	  "desc": "뇌의 신경 세포가 퇴화하여 기억력과 인지 기능이 저하되는 질환입니다."
+	  "desc": "뇌의 신경 세포가 퇴화하여 기억력과 인지 기능이 저하되는 질환입니다.",
+	  "img": "https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2023/02/01/20/24/healthy-brain-and-brain-with-alzheimers-8-col-3398230-002-0.jpg"
 	},
 	{
 	  "id": 43,
 	  "eng_name": "Amyotrophic lateral sclerosis ALS",
 	  "kor_name": "근위축성 측삭 경화증 (ALS)",
-	  "desc": "운동 신경 세포가 점차 퇴화하여 근육이 약화되고 마비되는 질환입니다."
+	  "desc": "운동 신경 세포가 점차 퇴화하여 근육이 약화되고 마비되는 질환입니다.",
+	  "img": "https://www.researchgate.net/profile/Alexios-Fotios-A-Mentis/publication/356017834/figure/fig1/AS:1111251446956032@1641954399135/Schematic-diagram-showing-the-effects-of-amyotrophic-lateral-sclerosis-ALS-on-nerve-and_Q320.jpg"
 	},
 	{
 	  "id": 44,
 	  "eng_name": "Ankylosing spondylitis",
 	  "kor_name": "강직성 척추염",
-	  "desc": "척추와 골반의 관절에 염증이 생겨 강직과 통증을 유발하는 만성 질환입니다."
+	  "desc": "척추와 골반의 관절에 염증이 생겨 강직과 통증을 유발하는 만성 질환입니다.",
+	  "img": "https://www.mayoclinic.org/content/dam/media/en/images/2023/02/10/ankylosing-spondylitis.jpg"
 	},
 	{
 	  "id": 45,
 	  "eng_name": "Diabetes insipidus",
 	  "kor_name": "요붕증",
-	  "desc": "항이뇨호르몬의 부족 또는 신장의 반응 불량으로 인해 과도한 양의 소변이 배출되는 상태입니다."
+	  "desc": "항이뇨호르몬의 부족 또는 신장의 반응 불량으로 인해 과도한 양의 소변이 배출되는 상태입니다.",
+	  "img": "https://cdn1.byjus.com/wp-content/uploads/2016/10/Diabetes-Insipidus.png"
 	},
 	{
 	  "id": 46,
 	  "eng_name": "Acanthosis nigricans",
 	  "kor_name": "흑색 가시 세포증",
-	  "desc": "피부가 어두워지고 두꺼워지는 질환으로, 종종 목과 겨드랑이 주위에 나타납니다."
+	  "desc": "피부가 어두워지고 두꺼워지는 질환으로, 종종 목과 겨드랑이 주위에 나타납니다.",
+	  "img": "https://i.pinimg.com/originals/13/46/06/13460649fcc2c5378983542e28fb20a4.png"
 	},
 	{
 	  "id": 47,
 	  "eng_name": "Essential tremor",
 	  "kor_name": "본태성 떨림",
-	  "desc": "특정 동작을 할 때 손이나 머리가 떨리는 신경학적 질환입니다."
+	  "desc": "특정 동작을 할 때 손이나 머리가 떨리는 신경학적 질환입니다.",
+	  "img": "https://i.ytimg.com/vi/FO06YZCDYN0/maxresdefault.jpg"
 	},
 	{
 	  "id": 48,
 	  "eng_name": "Carbon monoxide poisoning",
 	  "kor_name": "일산화탄소 중독",
-	  "desc": "일산화탄소에 노출되어 혈액의 산소 운반 능력이 저하되는 상태입니다."
+	  "desc": "일산화탄소에 노출되어 혈액의 산소 운반 능력이 저하되는 상태입니다.",
+	  "img": "https://content.ca.healthwise.net/resources/13.8/en-ca/media/medical/hw/h9991480_001.jpg"
 	},
 	{
 	  "id": 49,
 	  "eng_name": "Diaper rash",
 	  "kor_name": "기저귀 발진",
-	  "desc": "기저귀에 덮인 피부가 자극을 받아 발생하는 발진입니다."
+	  "desc": "기저귀에 덮인 피부가 자극을 받아 발생하는 발진입니다.",
+	  "img": "https://www.registerednursern.com/wp-content/uploads/2022/08/diaper-rash-severe.jpg"
 	},
 	{
 	  "id": 50,
 	  "eng_name": "Flat feet",
 	  "kor_name": "평발",
-	  "desc": "발 아치가 평평하여 발바닥 전체가 지면에 닿는 상태입니다."
+	  "desc": "발 아치가 평평하여 발바닥 전체가 지면에 닿는 상태입니다.",
+	  "img": "https://sa1s3optim.patientpop.com/assets/images/provider/photos/2619207.jpg"
 	},
 	{
-	  "id": 51,
-	  "eng_name": "Eczema",
-	  "kor_name": "습진",
-	  "desc": "피부에 염증, 가려움증, 발진이 나타나는 만성 피부 질환입니다."
-	},
-	{
-	  "id": 52,
-	  "eng_name": "Dissociative disorder",
-	  "kor_name": "해리 장애",
-	  "desc": "정신적 스트레스나 트라우마로 인해 기억, 정체성, 의식 등의 기능에 장애가 발생하는 상태입니다."
-	},
-	{
-	  "id": 53,
-	  "eng_name": "Cerebral edema",
-	  "kor_name": "뇌부종",
-	  "desc": "뇌에 과도한 체액이 축적되어 뇌가 부어오르는 상태입니다."
-	},
-	{
-	  "id": 54,
-	  "eng_name": "Cat scratch disease",
-	  "kor_name": "고양이 긁힘병",
-	  "desc": "고양이에 의해 발생하는 박테리아 감염으로 림프절이 부어오르는 질환입니다."
-	},
-	{
-	  "id": 55,
-	  "eng_name": "Cystic Fibrosis",
-	  "kor_name": "낭포성 섬유증",
-	  "desc": "유전성 질환으로, 체내 점액 분비물의 비정상적인 농도가 증가하여 여러 기관에 영향을 미칩니다."
-	},
-	{
-	  "id": 56,
-	  "eng_name": "Cyst of the eyelid",
-	  "kor_name": "눈꺼풀 낭종",
-	  "desc": "눈꺼풀에 발생하는 낭종입니다."
-	},
-	{
-	  "id": 57,
-	  "eng_name": "Chancroid",
-	  "kor_name": "연성하감",
-	  "desc": "헤모필루스 듀크레이(Haemophilus ducreyi) 박테리아에 의해 발생하는 성병입니다."
-	},
-	{
-	  "id": 58,
-	  "eng_name": "Endophthalmitis",
-	  "kor_name": "안구내염",
-	  "desc": "안구 내부에 염증이 발생하는 상태입니다."
-	},
-	{
-	  "id": 59,
-	  "eng_name": "Diabetic retinopathy",
-	  "kor_name": "당뇨병성 망막병증",
-	  "desc": "당뇨병으로 인해 망막의 혈관이 손상되어 시력이 저하되는 상태입니다."
-	},
-	{
-	  "id": 60,
-	  "eng_name": "Drug abuse cocaine",
-	  "kor_name": "코카인 남용",
-	  "desc": "코카인 약물의 남용으로 인한 중독 상태입니다."
-	},
-	{
-	  "id": 61,
-	  "eng_name": "Alcohol intoxication",
-	  "kor_name": "알코올 중독",
-	  "desc": "과도한 알코올 섭취로 인해 발생하는 중독 상태입니다."
-	},
-	{
-	  "id": 62,
-	  "eng_name": "Corneal disorder",
-	  "kor_name": "각막 질환",
-	  "desc": "각막에 발생하는 다양한 질환입니다."
-	},
-	{
-	  "id": 63,
-	  "eng_name": "Acute glaucoma",
-	  "kor_name": "급성 녹내장",
-	  "desc": "눈 내부의 압력이 급격히 상승하여 시력 손상을 유발하는 상태입니다."
-	},
-	{
-	  "id": 64,
-	  "eng_name": "Chronic pain disorder",
-	  "kor_name": "만성 통증 장애",
-	  "desc": "장기간 지속되는 통증을 특징으로 하는 상태입니다."
-	},
-	{
-	  "id": 65,
-	  "eng_name": "Chagas disease",
-	  "kor_name": "샤가스병",
-	  "desc": "트리파노소마 크루지 기생충에 의해 발생하는 감염성 질환입니다."
-	},
-	{
-	  "id": 66,
-	  "eng_name": "Chlamydia",
-	  "kor_name": "클라미디아",
-	  "desc": "클라미디아 박테리아에 의한 성병입니다."
-	},
-	{
-	  "id": 67,
-	  "eng_name": "Gout",
-	  "kor_name": "통풍",
-	  "desc": "요산이 관절에 축적되어 염증과 통증을 유발하는 상태입니다."
-	},
-	{
-	  "id": 68,
-	  "eng_name": "Complex regional pain syndrome",
-	  "kor_name": "복합 부위 통증 증후군",
-	  "desc": "부상 후에 특정 부위에 극심한 통증과 부종이 지속되는 상태입니다."
-	},
-	{
-	  "id": 69,
-	  "eng_name": "Erectile dysfunction",
-	  "kor_name": "발기부전",
-	  "desc": "성관계 동안 발기를 유지할 수 없는 상태입니다."
-	},
-	{
-	  "id": 70,
-	  "eng_name": "Encephalitis",
-	  "kor_name": "뇌염",
-	  "desc": "뇌에 염증이 발생하는 상태입니다."
-	},
-	{
-	  "id": 71,
-	  "eng_name": "Conversion disorder",
-	  "kor_name": "전환 장애",
-	  "desc": "심리적 스트레스가 신체적 증상으로 나타나는 상태입니다."
-	},
-	{
-	  "id": 72,
-	  "eng_name": "Factitious disorder",
-	  "kor_name": "인위성 장애",
-	  "desc": "환자가 고의로 질병을 꾸미거나 유발하는 정신 장애입니다."
-	},
-	{
-	  "id": 73,
-	  "eng_name": "Fracture of the rib",
-	  "kor_name": "늑골 골절",
-	  "desc": "늑골이 금이 가거나 부러지는 상태입니다."
-	},
-	{
-	  "id": 74,
-	  "eng_name": "Cystitis",
-	  "kor_name": "방광염",
-	  "desc": "방광에 염증이 발생하는 상태입니다."
-	},
-	{
-	  "id": 75,
-	  "eng_name": "Ganglion cyst",
-	  "kor_name": "결절종",
-	  "desc": "관절이나 힘줄에 발생하는 액체로 채워진 종양입니다."
-	},
-	{
-	  "id": 76,
-	  "eng_name": "Acute stress reaction",
-	  "kor_name": "급성 스트레스 반응",
-	  "desc": "극도의 스트레스 상황에서 나타나는 일시적인 심리적 반응입니다."
-	},
-	{
-	  "id": 77,
-	  "eng_name": "Allergy",
-	  "kor_name": "알레르기",
-	  "desc": "면역 체계가 특정 물질에 과민 반응을 보이는 상태입니다."
-	},
-	{
-	  "id": 78,
-	  "eng_name": "Aphakia",
-	  "kor_name": "무수정체증",
-	  "desc": "눈의 수정체가 없는 상태입니다."
-	},
-	{
-	  "id": 79,
-	  "eng_name": "Epidural hemorrhage",
-	  "kor_name": "경막외 출혈",
-	  "desc": "경막 외부에 출혈이 발생하는 상태입니다."
-	},
-	{
-	  "id": 80,
-	  "eng_name": "Dengue fever",
-	  "kor_name": "뎅기열",
-	  "desc": "뎅기 바이러스에 감염되어 발생하는 열성 질환입니다."
-	},
-	{
-	  "id": 81,
-	  "eng_name": "Ectropion",
-	  "kor_name": "안검외반증",
-	  "desc": "눈꺼풀이 바깥쪽으로 뒤집히는 상태입니다."
-	},
-	{
-	  "id": 82,
-	  "eng_name": "Central retinal artery or vein occlusion",
-	  "kor_name": "중심망막동맥 또는 정맥 폐쇄",
-	  "desc": "망막의 중심 동맥 또는 정맥이 막혀 시력이 급격히 저하되는 상태입니다."
-	},
-	{
-	  "id": 83,
-	  "eng_name": "Concussion",
-	  "kor_name": "뇌진탕",
-	  "desc": "머리에 외상이 가해져 일시적인 뇌 기능 장애가 발생하는 상태입니다."
-	},
-	{
-	  "id": 84,
-	  "eng_name": "Cushing syndrome",
-	  "kor_name": "쿠싱 증후군",
-	  "desc": "체내에 코티솔 호르몬이 과도하게 분비되어 발생하는 상태입니다."
-	},
-	{
-	  "id": 85,
-	  "eng_name": "Carcinoid syndrome",
-	  "kor_name": "카르시노이드 증후군",
-	  "desc": "신경내분비 종양에 의해 발생하는 증상군입니다."
-	},
-	{
-	  "id": 86,
-	  "eng_name": "Corneal abrasion",
-	  "kor_name": "각막 찰과상",
-	  "desc": "각막에 상처가 나는 상태입니다."
-	},
-	{
-	  "id": 87,
-	  "eng_name": "Granuloma inguinale",
-	  "kor_name": "서혜부 육아종",
-	  "desc": "성병성 세균에 의해 발생하는 서혜부의 만성 감염입니다."
-	},
-	{
-	  "id": 88,
-	  "eng_name": "Chalazion",
-	  "kor_name": "콩다래끼",
-	  "desc": "눈꺼풀에 발생하는 만성 염증성 덩어리입니다."
-	},
-	{
-	  "id": 89,
-	  "eng_name": "Endometrial hyperplasia",
-	  "kor_name": "자궁내막 증식증",
-	  "desc": "자궁내막이 비정상적으로 증식하는 상태입니다."
-	},
-	{
-	  "id": 90,
-	  "eng_name": "Acne",
-	  "kor_name": "여드름",
-	  "desc": "피지선의 과도한 활동으로 인해 피부에 염증과 발진이 발생하는 상태입니다."
-	}
-  ]
-  
+		"id": 51,
+		"eng_name": "Eczema",
+		"kor_name": "습진",
+		"desc": "피부에 염증, 가려움증, 발진이 나타나는 만성 피부 질환입니다.",
+		"img": "https://www.verywellhealth.com/thmb/ajxuaAtp3aAtsNS8FijZomGtWyY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/infected-eczema-5195739.FINAL-fb4ed61266644855a5c3ef0451a63db6.jpg"
+	  },
+	  {
+		"id": 52,
+		"eng_name": "Dissociative disorder",
+		"kor_name": "해리 장애",
+		"desc": "정신적 스트레스나 트라우마로 인해 기억, 정체성, 의식 등의 기능에 장애가 발생하는 상태입니다.",
+		"img": "https://www.frontiersin.org/files/Articles/1092826/fpsyt-14-1092826-HTML/image_m/fpsyt-14-1092826-g002.jpg"
+	  },
+	  {
+		"id": 53,
+		"eng_name": "Cerebral edema",
+		"kor_name": "뇌부종",
+		"desc": "뇌에 과도한 체액이 축적되어 뇌가 부어오르는 상태입니다.",
+		"img": "https://media.sciencephoto.com/c0/59/33/99/c0593399-800px-wm.jpg"
+	  },
+	  {
+		"id": 54,
+		"eng_name": "Cat scratch disease",
+		"kor_name": "고양이 긁힘병",
+		"desc": "고양이에 의해 발생하는 박테리아 감염으로 림프절이 부어오르는 질환입니다.",
+		"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH5GBQb5tQSLZp5HvoA9TM-QlQ4S5lmLWmJA&usqp=CAU"
+	  },
+	  {
+		"id": 55,
+		"eng_name": "Cystic Fibrosis",
+		"kor_name": "낭포성 섬유증",
+		"desc": "유전성 질환으로, 체내 점액 분비물의 비정상적인 농도가 증가하여 여러 기관에 영향을 미칩니다.",
+		"img": "https://medlineplus.gov/images/PX00012C_PRESENTATION.jpeg"
+	  },
+	  {
+		"id": 56,
+		"eng_name": "Cyst of the eyelid",
+		"kor_name": "눈꺼풀 낭종",
+		"desc": "눈꺼풀에 발생하는 낭종입니다.",
+		"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXjkIDX5Zc0Ho10tT6743cKcnifbcDmZQHW-Lvj4J0WuVAYDnt6K7USw_n-8wPtjYB2a0&usqp=CAU"
+	  },
+	  {
+		"id": 57,
+		"eng_name": "Chancroid",
+		"kor_name": "연성하감",
+		"desc": "헤모필루스 듀크레이(Haemophilus ducreyi) 박테리아에 의해 발생하는 성병입니다.",
+		"img": "https://images.fineartamerica.com/images-medium-large-5/4-chancroid-us-national-library-of-medicinescience-photo-library.jpg"
+	  },
+	  {
+		"id": 58,
+		"eng_name": "Endophthalmitis",
+		"kor_name": "안구내염",
+		"desc": "안구 내부에 염증이 발생하는 상태입니다.",
+		"img": "https://www.mdpi.com/jof/jof-08-00656/article_deploy/html/images/jof-08-00656-g001-550.jpg"
+	  },
+	  {
+		"id": 59,
+		"eng_name": "Diabetic retinopathy",
+		"kor_name": "당뇨병성 망막병증",
+		"desc": "당뇨병으로 인해 망막의 혈관이 손상되어 시력이 저하되는 상태입니다.",
+		"img": "https://lhblind.org/wp-content/uploads/2022/10/Diabetic-Retinopathy-AdobeStock_159261506-web.jpg"
+	  },
+	  {
+		"id": 60,
+		"eng_name": "Drug abuse cocaine",
+		"kor_name": "코카인 남용",
+		"desc": "코카인 약물의 남용으로 인한 중독 상태입니다.",
+		"img": "https://pubs.rsna.org/cms/10.1148/ryct.2019180031/asset/images/medium/ryct.2019180031.fig2a.gif"
+	  },
+	  {
+		"id": 61,
+		"eng_name": "Alcohol intoxication",
+		"kor_name": "알코올 중독",
+		"desc": "과도한 알코올 섭취로 인해 발생하는 중독 상태입니다.",
+		"img": "https://bagdarafarms.in/wp-content/uploads/2018/01/Alcohol-Toxicity-Combatted-With-Organic-Curcumin.jpg"
+	  },
+	  {
+		"id": 62,
+		"eng_name": "Corneal disorder",
+		"kor_name": "각막 질환",
+		"desc": "각막에 발생하는 다양한 질환입니다.",
+		"img": "https://lighthouseguild.org//wp-content/uploads/fly-images/4728/structures_of_the_eye_2-267x300-1-360x360-c.jpg"
+	  },
+	  {
+		"id": 63,
+		"eng_name": "Acute glaucoma",
+		"kor_name": "급성 녹내장",
+		"desc": "눈 내부의 압력이 급격히 상승하여 시력 손상을 유발하는 상태입니다.",
+		"img": "https://www.jems.com/wp-content/uploads/2013/10/1310JEMStor-z01.jpg"
+	  },
+	  {
+		"id": 64,
+		"eng_name": "Chronic pain disorder",
+		"kor_name": "만성 통증 장애",
+		"desc": "장기간 지속되는 통증을 특징으로 하는 상태입니다.",
+		"img": "https://capitalareapt.com/wp-content/uploads/2015/06/2.gif"
+	  },
+	  {
+		"id": 65,
+		"eng_name": "Chagas disease",
+		"kor_name": "샤가스병",
+		"desc": "트리파노소마 크루지 기생충에 의해 발생하는 감염성 질환입니다.",
+		"img": "https://ars.els-cdn.com/content/image/1-s2.0-S105017382030058X-gr1.jpg"
+	  },
+	  {
+		"id": 66,
+		"eng_name": "Chlamydia",
+		"kor_name": "클라미디아",
+		"desc": "클라미디아 박테리아에 의한 성병입니다.",
+		"img": "https://as2.ftcdn.net/v2/jpg/01/88/44/99/1000_F_188449915_H5mKaemT3e6GIDV1F875wMZ8MYMvZueg.jpg"
+	  },
+	  {
+		"id": 67,
+		"eng_name": "Gout",
+		"kor_name": "통풍",
+		"desc": "요산이 관절에 축적되어 염증과 통증을 유발하는 상태입니다.",
+		"img": "https://images.squarespace-cdn.com/content/v1/546646d9e4b06e6b60b343db/1445719166405-DN2YY6QOYGH31BXXYKTX/Gout+Treatment+Nashville.jpg"
+	  },
+	  {
+		"id": 68,
+		"eng_name": "Complex regional pain syndrome",
+		"kor_name": "복합 부위 통증 증후군",
+		"desc": "부상 후에 특정 부위에 극심한 통증과 부종이 지속되는 상태입니다.",
+		"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDDgG1D4xu_kgVF0F0vrCWUqBKyPe1BciSEiBJRG_dEjk7HGqXxM92e9IFwmEUVuAxXa8&usqp=CAU"
+	  },
+	  {
+		"id": 69,
+		"eng_name": "Erectile dysfunction",
+		"kor_name": "발기부전",
+		"desc": "성관계 동안 발기를 유지할 수 없는 상태입니다.",
+		"img": "https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2017/07/14/20/18/flaccid-and-erect-penis-8col.jpg"
+	  },
+	  {
+		"id": 70,
+		"eng_name": "Encephalitis",
+		"kor_name": "뇌염",
+		"desc": "뇌에 염증이 발생하는 상태입니다.",
+		"img": "https://img.jagranjosh.com/imported/images/E/Articles/Acute-Encephalitis-Syndrome.jpg"
+	  },
+	  {
+		"id": 71,
+		"eng_name": "Conversion disorder",
+		"kor_name": "전환 장애",
+		"desc": "심리적 스트레스가 신체적 증상으로 나타나는 상태입니다.",
+		"img": "https://th.bing.com/th?id=OCII.E6551436962EF488A12EAB6B169EC48790B61D66C881355E3634EAA20E52C73E&w=1606&p=0"
+	  },
+	  {
+		"id": 72,
+		"eng_name": "Factitious disorder",
+		"kor_name": "인위성 장애",
+		"desc": "환자가 고의로 질병을 꾸미거나 유발하는 정신 장애입니다.",
+		"img": "https://www.osmosis.org/_next/image?url=https%3A%2F%2Fosmose-it.s3.amazonaws.com%2FBBc42eAXTK69ZH4S5cyMryWFSaeKhbVv%2F_.jpg&w=3840&q=75"
+	  },
+	  {
+		"id": 73,
+		"eng_name": "Fracture of the rib",
+		"kor_name": "늑골 골절",
+		"desc": "늑골이 금이 가거나 부러지는 상태입니다.",
+		"img": "https://my.clevelandclinic.org/-/scassets/images/org/health/articles/17434-rib-fracture"
+	  },
+	  {
+		"id": 74,
+		"eng_name": "Cystitis",
+		"kor_name": "방광염",
+		"desc": "방광에 염증이 발생하는 상태입니다.",
+		"img": "https://www.drugwatch.com/wp-content/uploads/ic-how-it-works.jpg"
+	  },
+	  {
+		"id": 75,
+		"eng_name": "Ganglion cyst",
+		"kor_name": "결절종",
+		"desc": "관절이나 힘줄에 발생하는 액체로 채워진 종양입니다.",
+		"img": "https://www.rehabmypatient.com/media//uploads/articles/ganglion_cyst.png"
+	  },
+	  {
+		"id": 76,
+		"eng_name": "Acute stress reaction",
+		"kor_name": "급성 스트레스 반응",
+		"desc": "극도의 스트레스 상황에서 나타나는 일시적인 심리적 반응입니다.",
+		"img": "https://as1.ftcdn.net/v2/jpg/04/59/10/26/1000_F_459102677_i8rSAQqHqm61O40GnhDoDqfXIkwPJvaJ.jpg"
+	  },
+	  {
+		"id": 77,
+		"eng_name": "Allergy",
+		"kor_name": "알레르기",
+		"desc": "면역 체계가 특정 물질에 과민 반응을 보이는 상태입니다.",
+		"img": "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/1-allergy-mechanism-pikovit-science-photo-library.jpg"
+	  },
+	  {
+		"id": 78,
+		"eng_name": "Aphakia",
+		"kor_name": "무수정체증",
+		"desc": "눈의 수정체가 없는 상태입니다.",
+		"img": "https://images.ctfassets.net/u4vv676b8z52/6Slgy90VgdJ5FjrFBgCSyZ/d5238c284798ec1d32f8e212fbab2296/eye-anatomy-lens-330x220.gif"
+	  },
+	  {
+		"id": 79,
+		"eng_name": "Epidural hemorrhage",
+		"kor_name": "경막외 출혈",
+		"desc": "경막 외부에 출혈이 발생하는 상태입니다.",
+		"img": "https://my.clevelandclinic.org/-/scassets/images/org/health/articles/22034-epidural-hematoma-01"
+	  },
+	  {
+		"id": 80,
+		"eng_name": "Dengue fever",
+		"kor_name": "뎅기열",
+		"desc": "뎅기 바이러스에 감염되어 발생하는 열성 질환입니다.",
+		"img": "https://qph.cf2.quoracdn.net/main-qimg-13c3ae4201b98c532302bf8b88d34706"
+	  },
+	  {
+		"id": 81,
+		"eng_name": "Ectropion",
+		"kor_name": "안검외반증",
+		"desc": "눈꺼풀이 바깥쪽으로 뒤집히는 상태입니다.",
+		"img": "https://tidsskriftet.no/sites/default/files/styles/default_scale/public/image--article--2024--01--23-0309--23-0309.R2_Figur-1_ENG_2.jpg?itok=MOAAXBhB"
+	  },
+	  {
+		"id": 82,
+		"eng_name": "Central retinal artery or vein occlusion",
+		"kor_name": "중심망막동맥 또는 정맥 폐쇄",
+		"desc": "망막의 중심 동맥 또는 정맥이 막혀 시력이 급격히 저하되는 상태입니다.",
+		"img": "https://retinaspecialistsla.com/retina/assets/uploads/2015/04/occlusion.jpg"
+	  },
+	  {
+		"id": 83,
+		"eng_name": "Concussion",
+		"kor_name": "뇌진탕",
+		"desc": "머리에 외상이 가해져 일시적인 뇌 기능 장애가 발생하는 상태입니다.",
+		"img": "https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2019/03/14/20/11/traumatic-brain-injury-concussions-8col-3802786-006-0.jpg"
+	  },
+	  {
+		"id": 84,
+		"eng_name": "Cushing syndrome",
+		"kor_name": "쿠싱 증후군",
+		"desc": "체내에 코티솔 호르몬이 과도하게 분비되어 발생하는 상태입니다.",
+		"img": "https://www.mayoclinic.org/-/media/kcms/gbs/patient-consumer/images/2013/08/26/10/11/ds00470_im00313_r7_cushingssyndromethu_jpg.jpg"
+	  },
+	  {
+		"id": 85,
+		"eng_name": "Carcinoid syndrome",
+		"kor_name": "카르시노이드 증후군",
+		"desc": "신경내분비 종양에 의해 발생하는 증상군입니다.",
+		"img": "https://my.clevelandclinic.org/-/scassets/Images/org/health/articles/22103-carcinoid-syndrome"
+	  },
+	  {
+		"id": 86,
+		"eng_name": "Corneal abrasion",
+		"kor_name": "각막 찰과상",
+		"desc": "각막에 상처가 나는 상태입니다.",
+		"img": "https://smeyegroup.com/wp-content/uploads/2023/10/AdobeStock_591726295_corneal_abrasion.jpg"
+	  },
+	  {
+		"id": 87,
+		"eng_name": "Granuloma inguinale",
+		"kor_name": "서혜부 육아종",
+		"desc": "성병성 세균에 의해 발생하는 서혜부의 만성 감염입니다.",
+		"img": "https://media.post.rvohealth.io/wp-content/uploads/2020/09/194x105_Granuloma_inguinale.jpg"
+	  },
+	  {
+		"id": 88,
+		"eng_name": "Chalazion",
+		"kor_name": "콩다래끼",
+		"desc": "눈꺼풀에 발생하는 만성 염증성 덩어리입니다.",
+		"img": "https://images.ctfassets.net/u4vv676b8z52/4L95VCpnAkwz9PKgSWsaXQ/c6592450b16a1586f03d7beb1334f7e2/chalazion-vs-stye-660x440.gif"
+	  },
+	  {
+		"id": 89,
+		"eng_name": "Endometrial hyperplasia",
+		"kor_name": "자궁내막 증식증",
+		"desc": "자궁내막이 비정상적으로 증식하는 상태입니다.",
+		"img": "https://www.kjkhospital.com/wp-content/uploads/2020/06/endometrial_hyperplacia-3.png"
+	  },
+	  {
+		"id": 90,
+		"eng_name": "Acne",
+		"kor_name": "여드름",
+		"desc": "피지선의 과도한 활동으로 인해 피부에 염증과 발진이 발생하는 상태입니다.",
+		"img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNoS1o2oRe2TjNVqnyFH0bZDEbe8lcWVfUbA&usqp=CAU"
+	  }
+]

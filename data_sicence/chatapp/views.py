@@ -24,19 +24,19 @@ def load_disease_info(filepath):
 	with open(filepath, 'r', encoding='utf-8') as file:
 		disease_list = json.load(file)
 	
-	disease_info = {disease['eng_name']: {'korean_name': disease['kor_name'], 'description': disease['desc']} for disease in disease_list}
+	disease_info = {disease['eng_name']: {'korean_name': disease['kor_name'], 'description': disease['desc'], 'img': disease['img']} for disease in disease_list}
 	return disease_info
 
-filepath = '/home/minsekan/data_sicence/data_sicence/data_sicence/data/disease_symptom.json'
+filepath = '/home/minsekan/data_sicence/data_sicence/data/disease_symptom.json'
 disease_info = load_disease_info(filepath)
 
-file_path = '/home/minsekan/data_sicence/data_sicence/data_sicence/data/goal_set.p'
+file_path = '/home/minsekan/data_sicence/data_sicence/data/goal_set.p'
 with open(file_path, 'rb') as file:
 	consultation_data = pickle.load(file)
 
 test_data = consultation_data['train']
 
-file_path = '/home/minsekan/data_sicence/data_sicence/data_sicence/data/disease_symptom.p'
+file_path = '/home/minsekan/data_sicence/data_sicence/data/disease_symptom.p'
 with open(file_path, 'rb') as file:
 	disease_data = pickle.load(file)
 
@@ -339,11 +339,12 @@ def get_disease():
 	response_message += "\n환자의 증상과 유사한 질병 \n"
 	print("Top 5 Predicted Diseases:")
 	for idx, (disease, count) in enumerate(sorted_diseases[:5], start=1):
-		disease_info_dict = disease_info.get(disease, {'korean_name': '정보 없음', 'description': '설명이 없습니다.'})
-		response_message += f"{idx}. {disease} ({disease_info_dict['korean_name']})\n{disease_info_dict['description']}\n"
+		disease_info_dict = disease_info.get(disease, {'korean_name': '정보 없음', 'description': '설명이 없습니다.', 'img': 'img_link'})
+		response_message += f"{idx}. {disease} ({disease_info_dict['korean_name']})\n{disease_info_dict['description']}\n{disease_info_dict['img']}\n"
 		print(f"{idx}. {disease} ({disease_info_dict['korean_name']}){disease_info_dict['description']}")
 	
 	return response_message
+
 @csrf_exempt
 def send_message(request):
 	global stat, id, implicit_symptom_str, implicit_symptom_list

@@ -7,14 +7,26 @@
     <title>채팅</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Nanum Gothic', sans-serif;
+        }
+
         .message {
             white-space: pre-line;
         }
+
         .chat-container {
             height: calc(100vh - 150px);
         }
+
         .messages {
             height: calc(100% - 50px);
+        }
+
+        .messages .message {
+            font-size: 1.2rem;
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -34,29 +46,22 @@
 
     <script>
         $(document).ready(function () {
-            addMessage("학습중...", 'server');
-
+            addMessage("로딩중...", 'server');
+    
             $('#messageInput').prop('disabled', true);
             $('#sendButton').prop('disabled', true);
-
+    
             $.ajax({
                 url: '/chat/model_fit/',
                 type: 'get',
                 success: function (response) {
-                    console.log("Response from server:", response);
-                    if (response.status === 'Message received') {
-                        response.message.forEach(message => {
-                            console.log(message.text);
-                            addMessage(message.text, 'server');
-                        });
-                    }
-                    addMessage("학습완료\n\n증상을 입력하세요.", 'server');
+                    addMessage("로딩완료\n\n어떤 증상이 있나요? 증상을 입력하세요.", 'server');
                     $('#messageInput').prop('disabled', false);
                     $('#sendButton').prop('disabled', false);
                 }
             });
         });
-
+    
         function sendMessage() {
             var input = $('#messageInput').val();
             if (input.trim() !== '') {
@@ -64,7 +69,7 @@
                 $('#messageInput').val('');
                 $('#messageInput').prop('disabled', true); // Disable input field
                 $('#sendButton').prop('disabled', true); // Disable send button
-
+    
                 $.ajax({
                     url: '/chat/send_message/',
                     type: 'POST',
@@ -87,7 +92,7 @@
                 });
             }
         }
-
+    
         function sendYesNo(answer) {
             addMessage(answer, 'user');
             $('.button-container').remove(); // Remove buttons after sending the answer
@@ -112,14 +117,27 @@
                 }
             });
         }
-
+    
         function addMessage(message, sender) {
             var classToAdd = sender === 'server' ? 'text-left text-gray-700' : 'text-right text-blue-700';
-            var messageElement = $('<div>').addClass('message my-2').addClass(classToAdd).text(message);
+            var messageElement = $('<div>').addClass('message my-2').addClass(classToAdd);
+    
+            var imgPattern = /(https?:\/\/.*\.(?:png|jpg|gif))/i;
+            var parts = message.split(imgPattern);
+    
+            parts.forEach(part => {
+                if (imgPattern.test(part)) {
+                    var imgElement = $('<img>').attr('src', part).addClass('inline-image');
+                    messageElement.append(imgElement);
+                } else {
+                    messageElement.append(document.createTextNode(part));
+                }
+            });
+    
             $('#messages').append(messageElement);
             $('#messages').scrollTop($('#messages')[0].scrollHeight);
         }
-
+    
         function addYesNoButtons() {
             var yesButton = $('<button>')
                 .addClass('bg-green-500 text-white p-2 rounded-l-md mx-1')
@@ -133,12 +151,15 @@
             $('#messages').append(buttonContainer);
             $('#messages').scrollTop($('#messages')[0].scrollHeight);
         }
-
+    
         $(window).resize(function () {
             $('.chat-container').css('height', `calc(100vh - 150px)`);
             $('.messages').css('height', `calc(100% - 50px)`);
         });
     </script>
+    
+    
+    
 </body>
 
 </html>

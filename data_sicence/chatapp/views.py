@@ -11,6 +11,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 from sklearn.preprocessing import LabelEncoder, MultiLabelBinarizer
 from collections import Counter
+import json
 
 id = 0
 stat = 0
@@ -19,15 +20,25 @@ callme = {}
 implicit_symptom_list = []
 implicit_symptom_str = ""
 
-file_path = '/home/minsekan/data_sicence/goal_set.p'
+def load_disease_info(filepath):
+	with open(filepath, 'r', encoding='utf-8') as file:
+		disease_list = json.load(file)
+	
+	disease_info = {disease['eng_name']: {'korean_name': disease['kor_name'], 'description': disease['desc']} for disease in disease_list}
+	return disease_info
+
+filepath = '/home/minsekan/data_sicence/data_sicence/data_sicence/data/disease_symptom.json'
+disease_info = load_disease_info(filepath)
+
+file_path = '/home/minsekan/data_sicence/data_sicence/data_sicence/data/goal_set.p'
 with open(file_path, 'rb') as file:
 	consultation_data = pickle.load(file)
 
 test_data = consultation_data['train']
 
-file_path = '/home/minsekan/data_sicence/disease_symptom.p'
+file_path = '/home/minsekan/data_sicence/data_sicence/data_sicence/data/disease_symptom.p'
 with open(file_path, 'rb') as file:
-    disease_data = pickle.load(file)
+	disease_data = pickle.load(file)
 
 def index(request):
 	return render(request, 'chatapp/index.html')
@@ -44,16 +55,16 @@ def chat_view(request):
 
 # Define NDCG calculation functions
 def dcg_score(y_true, y_score, k=10):
-    order = np.argsort(y_score)[::-1]
-    y_true = np.take(y_true, order[:k])
-    gain = 2 ** y_true - 1
-    discounts = np.log2(np.arange(len(y_true)) + 2)
-    return np.sum(gain / discounts)
+	order = np.argsort(y_score)[::-1]
+	y_true = np.take(y_true, order[:k])
+	gain = 2 ** y_true - 1
+	discounts = np.log2(np.arange(len(y_true)) + 2)
+	return np.sum(gain / discounts)
 
 def ndcg_score(y_true, y_score, k=10):
-    best = dcg_score(y_true, y_true, k)
-    actual = dcg_score(y_true, y_score, k)
-    return actual / best
+	best = dcg_score(y_true, y_true, k)
+	actual = dcg_score(y_true, y_score, k)
+	return actual / best
 
 # Function to find and print scores based on input
 def find_scores(disease_name, symptom_name, df):
@@ -263,10 +274,9 @@ def input_implicit_symptom(user_input_implicit_symptom):
 
 	# Check if any matching implicit symptoms are found
 	if matching_implicit_symptoms:
-		response_message += "\n입력받은 암시적 증상 : \n"
 		print("\nMatched Implicit Symptoms:")
 		for symptom in matching_implicit_symptoms:
-			response_message += f"- {symptom}\n"
+			# response_message += f"- {symptom}\n"
 			print(f"- {symptom}")
 
 		# Update the combined_symptoms dictionary to include the matched implicit symptoms
@@ -283,6 +293,7 @@ def input_implicit_symptom(user_input_implicit_symptom):
 def get_disease():
 	response_message = ""
 	df = create_df()
+	
 	# Define and train the Random Forest model
 	X = df['Explicit Symptoms'] + " " + df['Implicit Symptoms']
 	y = df['Disease Tag']
@@ -307,8 +318,6 @@ def get_disease():
 		return predicted_diseases
 
 	# Assuming combined_symptoms is a dictionary containing symptoms
-	# For example: combined_symptoms = {'symptoms': ['knee pain', 'fever', 'headache']}
-	# combined_symptoms_dict = {'symptoms': ['knee pain']}  # Example
 	combined_symptoms_dict = combined_symptoms
 
 	# Convert the set of combined symptoms to a single string
@@ -327,13 +336,14 @@ def get_disease():
 	sorted_diseases = sorted(disease_counts.items(), key=lambda x: x[1], reverse=True)
 
 	# Print the top 5 predicted diseases
-	response_message += "\nTop 5 Predicted Diseases : \n"
+	response_message += "\n환자의 증상과 유사한 질병 \n"
 	print("Top 5 Predicted Diseases:")
 	for idx, (disease, count) in enumerate(sorted_diseases[:5], start=1):
-		response_message += f"{idx}. {disease} (Count: {count})\n"
-		print(f"{idx}. {disease} (Count: {count})")
+		disease_info_dict = disease_info.get(disease, {'korean_name': '정보 없음', 'description': '설명이 없습니다.'})
+		response_message += f"{idx}. {disease} ({disease_info_dict['korean_name']})\n{disease_info_dict['description']}\n"
+		print(f"{idx}. {disease} ({disease_info_dict['korean_name']}){disease_info_dict['description']}")
+	
 	return response_message
-
 @csrf_exempt
 def send_message(request):
 	global stat, id, implicit_symptom_str, implicit_symptom_list
@@ -352,9 +362,8 @@ def send_message(request):
 			id += 1
 			stat = 1
 		if stat == 1:
-			print(id, len(implicit_symptom_list), implicit_symptom_str)
 			if id < len(implicit_symptom_list):
-				response_message = implicit_symptom_list[id] + " 증상이 있으십니까? (yes or no)\n"
+				response_message = implicit_symptom_list[id] + " 증상이 있으십니까?\n"
 				stat = 2
 			else:
 				stat = 3
@@ -365,3 +374,4 @@ def send_message(request):
 		return JsonResponse({'status': 'Message received', 'message': response_message})
 	else:
 		return JsonResponse({'status': 'Invalid request'}, status=400)
+

@@ -11,10 +11,10 @@
             white-space: pre-line;
         }
         .chat-container {
-            height: calc(100vh - 150px); /* 헤더 및 여백을 고려한 높이 조절 */
+            height: calc(100vh - 150px);
         }
         .messages {
-            height: calc(100% - 50px); /* 입력창 영역을 제외한 높이 */
+            height: calc(100% - 50px);
         }
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -50,7 +50,7 @@
                             addMessage(message.text, 'server');
                         });
                     }
-                    addMessage("학습완료\n증상을 입력하세요.", 'server');
+                    addMessage("학습완료\n\n증상을 입력하세요.", 'server');
                     $('#messageInput').prop('disabled', false);
                     $('#sendButton').prop('disabled', false);
                 }
@@ -62,6 +62,9 @@
             if (input.trim() !== '') {
                 addMessage(input, 'user');
                 $('#messageInput').val('');
+                $('#messageInput').prop('disabled', true); // Disable input field
+                $('#sendButton').prop('disabled', true); // Disable send button
+
                 $.ajax({
                     url: '/chat/send_message/',
                     type: 'POST',
@@ -74,6 +77,9 @@
                             $('#messageInput').prop('disabled', true);
                             $('#sendButton').prop('disabled', true);
                         }
+                        if (response.message.includes('증상이 있으십니까?')) {
+                            addYesNoButtons();
+                        }
                     },
                     error: function () {
                         console.log('Error sending message');
@@ -82,10 +88,49 @@
             }
         }
 
+        function sendYesNo(answer) {
+            addMessage(answer, 'user');
+            $('.button-container').remove(); // Remove buttons after sending the answer
+            $.ajax({
+                url: '/chat/send_message/',
+                type: 'POST',
+                contentType: 'application/json',
+                data: JSON.stringify({ 'message': answer }),
+                success: function (response) {
+                    console.log(`${response.status}, ${response.message}`);
+                    addMessage(response.message, 'server');
+                    if (response.status === 'Limit reached') {
+                        $('#messageInput').prop('disabled', true);
+                        $('#sendButton').prop('disabled', true);
+                    }
+                    if (response.message.includes('증상이 있으십니까?')) {
+                        addYesNoButtons();
+                    }
+                },
+                error: function () {
+                    console.log('Error sending message');
+                }
+            });
+        }
+
         function addMessage(message, sender) {
             var classToAdd = sender === 'server' ? 'text-left text-gray-700' : 'text-right text-blue-700';
             var messageElement = $('<div>').addClass('message my-2').addClass(classToAdd).text(message);
             $('#messages').append(messageElement);
+            $('#messages').scrollTop($('#messages')[0].scrollHeight);
+        }
+
+        function addYesNoButtons() {
+            var yesButton = $('<button>')
+                .addClass('bg-green-500 text-white p-2 rounded-l-md mx-1')
+                .text('예')
+                .click(function () { sendYesNo('yes'); });
+            var noButton = $('<button>')
+                .addClass('bg-red-500 text-white p-2 rounded-r-md mx-1')
+                .text('아니오')
+                .click(function () { sendYesNo('no'); });
+            var buttonContainer = $('<div>').addClass('button-container flex justify-center mt-4').append(yesButton).append(noButton);
+            $('#messages').append(buttonContainer);
             $('#messages').scrollTop($('#messages')[0].scrollHeight);
         }
 

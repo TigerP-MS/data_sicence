@@ -18,7 +18,7 @@ from sklearn.preprocessing import LabelEncoder, MultiLabelBinarizer
 
 
 # Load the data from the pickled file
-file_path = '/home/minsekan/data_sicence/goal_set.p'
+file_path = '/home/minsekan/data_sicence/data_sicence/data_sicence/data/goal_set.p'
 with open(file_path, 'rb') as file:
     consultation_data = pickle.load(file)
 
@@ -78,7 +78,8 @@ y = label_encoder.fit_transform(y)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 # Vectorize text data with TF-IDF
-vectorizer = TfidfVectorizer(ngram_range=(1, 2), stop_words='english', max_features=3000, sublinear_tf=True)
+vectorizer = TfidfVectorizer(ngram_range=(1, 2), stop_words='english', max_features=5000, sublinear_tf=True)
+# vectorizer = TfidfVectorizer(ngram_range=(1, 2))
 X_train = vectorizer.fit_transform(X_train)
 X_test = vectorizer.transform(X_test)
 
@@ -211,7 +212,7 @@ import pandas as pd
 import pickle
 
 # Load the data from the pickle file
-file_path = '/home/minsekan/data_sicence/disease_symptom.p'
+file_path = '/home/minsekan/data_sicence/data_sicence/data_sicence/data/disease_symptom.p'
 with open(file_path, 'rb') as file:
     disease_data = pickle.load(file)
 
@@ -324,7 +325,7 @@ from collections import Counter
 
 
 # Load the data from the pickled file
-file_path = '/home/minsekan/data_sicence/goal_set.p'
+file_path = '/home/minsekan/data_sicence/data_sicence/data_sicence/data/goal_set.p'
 with open(file_path, 'rb') as file:
     consultation_data = pickle.load(file)
 

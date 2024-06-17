@@ -27,16 +27,16 @@ def load_disease_info(filepath):
 	disease_info = {disease['eng_name']: {'korean_name': disease['kor_name'], 'description': disease['desc'], 'img': disease['img']} for disease in disease_list}
 	return disease_info
 
-filepath = '/home/minsekan/data_sicence/data_sicence/data/disease_symptom.json'
+filepath = '/home/minsekan/data_sicence/data_sicence/data_sicence/data/disease_symptom.json'
 disease_info = load_disease_info(filepath)
 
-file_path = '/home/minsekan/data_sicence/data_sicence/data/goal_set.p'
+file_path = '/home/minsekan/data_sicence/data_sicence/data_sicence/data/goal_set.p'
 with open(file_path, 'rb') as file:
 	consultation_data = pickle.load(file)
 
 test_data = consultation_data['train']
 
-file_path = '/home/minsekan/data_sicence/data_sicence/data/disease_symptom.p'
+file_path = '/home/minsekan/data_sicence/data_sicence/data_sicence/data/disease_symptom.p'
 with open(file_path, 'rb') as file:
 	disease_data = pickle.load(file)
 
